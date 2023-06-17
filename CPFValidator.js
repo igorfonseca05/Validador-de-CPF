@@ -1,6 +1,6 @@
 const form = document.querySelector('.formulario')
 const result = document.querySelector('.result')
-const pseudo = document.styleSheets[0].rules[10].style
+const pseudo = document.styleSheets[0].rules[11].style
 
 // console.log(pseudo)
 
@@ -57,7 +57,7 @@ form.CPFValidator.addEventListener('input', event => {
         const isValid = registeredCPF.getDigitsCPFNumbers()
 
         if (isValid) {
-            showResult('green', "\"CPF válido\"");
+            showResult('rgb(6, 207, 6)', "\"CPF válido\"");
         } else{
             showResult('red', "\"CPF inválido\"");  
         }

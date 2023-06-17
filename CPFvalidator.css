@@ -12,7 +12,7 @@
     --border-radius: 10px;
     --font-result: 25px;
     --background-color: #141e30;
-    --background-grandient: linear-gradient(90deg, #36d1dc 0%, #5b86e5 100%);
+    --background-grandient: linear-gradient(90deg, #192f5e 0%, #03a9f4 100%);
     --font-family: 'Lato', sans-serif;
 }
 
@@ -21,8 +21,8 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: var(--background-color);
-    /* background-image: var(--background-grandient); */
+    /* background-color: var(--background-color); */
+    background-image: var(--background-grandient);
     font-size: 62.2%;
 }
 
@@ -37,12 +37,11 @@ h1 {
     text-align: center;
     font-size: 6em;
     background-color: var(--font-color);
-    color:  var(--background-color);
+    color:  #028bcaf3;
+
     display: block;
     height: 3em;
     padding-top: .8em;
-
-
 }
 
 .inputData {
@@ -66,17 +65,21 @@ h1 {
     margin-top: 10px;
     text-align: center;
 }
+#CPFValidator::placeholder {
+    color: rgba(255, 255, 255, 0.712);
+    
+}
 
 .result {
     margin: 0 auto;
     font-family: var(--font-family);
     color: white;
-    
+    /* background-color: rgb(7, 214, 7); */
     font-size: var(--font-result);
     margin-top: 13.5px;
     border-radius: var(--border-radius);
     height: 45px;
-    width: 14em;
+    width: 14.4em;
 }
 
 .result::before {
@@ -85,7 +88,7 @@ h1 {
     display: inline-block;
     padding-top: 5px;
     border-radius: var(--border-radius);
-    width: 14.2em;
+    width: 14.4em;
     height: 40px;
     font-size: var(--font-result);
     color: var(--font-color);
@@ -137,5 +140,5 @@ p {
     width: 250px;
     height: 200px;
     stroke: #ffffff;
-    stroke-width: .7;
+    stroke-width: .5;
 }
