@@ -9,7 +9,7 @@
 
 :root {
     --font-color: rgb(255, 255, 255);
-    --border-radius: 30px;
+    --border-radius: 10px;
     --font-result: 25px;
     --background-color: #141e30;
     --background-grandient: linear-gradient(90deg, #36d1dc 0%, #5b86e5 100%);
@@ -27,14 +27,12 @@ body {
 }
 
 form {
-    margin: 3vh auto;
-    width: 500px;
-
+    margin: 3vh 0;
 }
 
 h1 {
     max-width: 1400px;
-    min-width: 400px;
+    min-width: 360px;
     font-family: 'Geologica', sans-serif;;
     text-align: center;
     font-size: 6em;
@@ -62,7 +60,7 @@ h1 {
     border-color: white;
     border-style: solid;
     height: 50px;
-    min-width: 23em;
+    min-width: 19em;
     max-width: 23em ;
     outline: 0;
     margin-top: 10px;
@@ -73,11 +71,12 @@ h1 {
     margin: 0 auto;
     font-family: var(--font-family);
     color: white;
+    
     font-size: var(--font-result);
     margin-top: 13.5px;
     border-radius: var(--border-radius);
     height: 45px;
-    width: 17.5em;
+    width: 14em;
 }
 
 .result::before {
@@ -86,12 +85,11 @@ h1 {
     display: inline-block;
     padding-top: 5px;
     border-radius: var(--border-radius);
-    width: 17.5em;
+    width: 14.2em;
     height: 40px;
     font-size: var(--font-result);
     color: var(--font-color);
     animation: 0.5s ease-in-out 0s 1 normal forwards running valido;
-
 
 }
 
@@ -124,8 +122,20 @@ p {
     color: var(--font-color);
     font-family: var(--font-family);
     text-align: center;
-    /* padding: .5em; */
+    padding: .2em;
     font-size: 16px;
     letter-spacing: 0.5px;
     margin-top: 35px;
+}
+
+.icon {
+    margin: 7em 0;
+    text-align: center;
+}
+
+.icon > svg {
+    width: 250px;
+    height: 200px;
+    stroke: #ffffff;
+    stroke-width: .7;
 }
