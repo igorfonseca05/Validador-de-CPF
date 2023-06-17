@@ -2,7 +2,6 @@ const form = document.querySelector('.formulario')
 const result = document.querySelector('.result')
 const pseudo = document.styleSheets[0].rules[9].style
 
-console.log(pseudo)
 function ValidCPF(cpfValue) {
     Object.defineProperty(this, 'cleanCPF', {
         value: cpfValue.replace(/\D+/g, '')
