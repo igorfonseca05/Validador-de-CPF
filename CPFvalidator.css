@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-color: rgb(255, 255, 255);
+    --border-radius: 30px;
+    --font-result: 25px;
+    --background-color: #141e30;
+    --background-grandient: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    --font-family: 'Lato', sans-serif;
+}
+
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--background-color);
+    /* background-image: var(--background-grandient); */
+    font-size: 62.2%;
+}
+
+form {
+    margin: 0vh auto;
+    width: 400px;
+}
+
+h1 {
+    max-width: 1200px;
+    min-width: 360px;
+    font-family: var(--font-family);
+    text-align: center;
+    font-size: 5em;
+    background-color: rgb(255, 255, 255);
+    color: #141e30;
+    display: block;
+    height: 3em;
+    padding-top: .8em;
+
+
+}
+
+.inputData {
+    color: var(--font-color);
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+
+#CPFValidator {
+    background-color: #14141400;
+    font-size: 19px;
+    color: var(--font-color);
+    border-radius: var(--border-radius);
+    border-color: white;
+    border-style: solid;
+    height: 50px;
+    min-width: 18em;
+    /* max-width: ; */
+    outline: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.result {
+    position: absolute;
+    font-family: var(--font-family);
+    color: white;
+    font-size: var(--font-result);
+    margin-top: 13.5px;
+    border-radius: var(--border-radius);
+    height: 50px;
+    width: 16em;
+}
+
+.result::before {
+    text-align: center;
+    transform: translateX(50px);
+    display: inline-block;
+    padding-top: 5px;
+    border-radius: var(--border-radius);
+    width: 13.7em;
+    height: 40px;
+    font-size: var(--font-result);
+    color: var(--font-color);
+    animation: 0.5s ease-in-out 0s 1 normal forwards running valido;
+
+
+}
+
+@keyframes valido {
+    from {
+        transform: translate3d(28px, 52px, 0px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(28px, 0px, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes invalido {
+    from {
+        transform: translate3d(28px, 0px, 0px);
+        opacity: 1;
+    }
+
+    to {
+        transform: translate3d(28px, 52px, 0px);
+        opacity: 0;
+    }
+}
+
+
+p {
+    color: var(--font-color);
+    font-family: var(--font-family);
+    text-align: center;
+    /* padding: .5em; */
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    margin-top: 35px;
+}
