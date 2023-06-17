@@ -12,7 +12,7 @@
     --border-radius: 30px;
     --font-result: 25px;
     --background-color: #141e30;
-    --background-grandient: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    --background-grandient: linear-gradient(90deg, #36d1dc 0%, #5b86e5 100%);
     --font-family: 'Lato', sans-serif;
 }
 
@@ -27,8 +27,9 @@ body {
 }
 
 form {
-    margin: 5.4vh auto;
-    width: 400px;
+    margin: 3vh auto;
+    width: 500px;
+
 }
 
 h1 {
@@ -37,8 +38,8 @@ h1 {
     font-family: 'Geologica', sans-serif;;
     text-align: center;
     font-size: 6em;
-    background-color: rgb(255, 255, 255);
-    color: #141e30;
+    background-color: var(--font-color);
+    color:  var(--background-color);
     display: block;
     height: 3em;
     padding-top: .8em;
@@ -61,22 +62,22 @@ h1 {
     border-color: white;
     border-style: solid;
     height: 50px;
-    min-width: 18em;
-    /* max-width: ; */
+    min-width: 23em;
+    max-width: 23em ;
     outline: 0;
     margin-top: 10px;
     text-align: center;
 }
 
 .result {
-    position: absolute;
+    margin: 0 auto;
     font-family: var(--font-family);
     color: white;
     font-size: var(--font-result);
     margin-top: 13.5px;
     border-radius: var(--border-radius);
-    height: 50px;
-    width: 16em;
+    height: 45px;
+    width: 17.5em;
 }
 
 .result::before {
@@ -85,7 +86,7 @@ h1 {
     display: inline-block;
     padding-top: 5px;
     border-radius: var(--border-radius);
-    width: 13.7em;
+    width: 17.5em;
     height: 40px;
     font-size: var(--font-result);
     color: var(--font-color);
@@ -96,24 +97,24 @@ h1 {
 
 @keyframes valido {
     from {
-        transform: translate3d(28px, 52px, 0px);
+        transform: translate3d(0px, 52px, 0px);
         opacity: 0;
     }
 
     to {
-        transform: translate3d(28px, 0px, 0px);
+        transform: translate3d(0px, 0px, 0px);
         opacity: 1;
     }
 }
 
 @keyframes invalido {
     from {
-        transform: translate3d(28px, 0px, 0px);
+        transform: translate3d(0px, 0px, 0px);
         opacity: 1;
     }
 
     to {
-        transform: translate3d(28px, 52px, 0px);
+        transform: translate3d(0px, 52px, 0px);
         opacity: 0;
     }
 }
@@ -124,7 +125,7 @@ p {
     font-family: var(--font-family);
     text-align: center;
     /* padding: .5em; */
-    font-size: 12px;
+    font-size: 16px;
     letter-spacing: 0.5px;
     margin-top: 35px;
 }
